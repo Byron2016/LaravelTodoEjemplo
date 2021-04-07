@@ -1,0 +1,4 @@
+- Creación de controlador/modelo/seeder/factory/migration
+  - php artisan make:model Todo -a
+- Una vez actualizado archivo de migración ejecutar la migración.
+  - php artisan migrate
