@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "ryannaddy.laravel-artisan",
+    "onecentlin.laravel-blade",
+    "austenc.laravel-blade-spacer",
+    "codingyu.laravel-goto-view",
+    "onecentlin.laravel5-snippets",
+    "amiralizadeh9480.laravel-extra-intellisense",
+    "ritwickdey.live-sass",
+    "michelemelluso.code-beautifier",
+    "felixfbecker.php-intellisense",
+    "afmicc.getterandsettergenerator",
+    "coenraads.bracket-pair-colorizer",
+    "ysemeniuk.emmet-live",
+    "knisterpeter.vscode-github",
+    "xabikos.javascriptsnippets", 
+    "emmanuelbeziat.vscode-great-icons",
+
+
+  ]
+}
