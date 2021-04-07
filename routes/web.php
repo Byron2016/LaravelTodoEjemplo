@@ -50,3 +50,8 @@ Route::post('ajax-request','AjaxController@obtieneDataCarrito');
 
 Route::get('/desplegar','DesplegarController@index');
 Route::view('/convue','vue_desplegar');
+
+// PARA TODOS
+Route::get('/todos', function () {
+    return view('todos.index');
+});
