@@ -52,6 +52,18 @@ Route::get('/desplegar','DesplegarController@index');
 Route::view('/convue','vue_desplegar');
 
 // PARA TODOS
-Route::get('/todos', function () {
-    return view('todos.index');
-});
+// Route::get('/todos', function () {
+//     return view('todos.index');
+// });
+
+// Route::get('/todos/create', function () {
+//     return view('todos.create');
+// });
+Route::get('/todos','TodoController@index');
+
+Route::get('/todos/create', 'TodoController@create');
+
+Route::post('/todos/create', 'TodoController@store');
+
+Route::get('/todos/edit', 'TodoController@edit');
+
