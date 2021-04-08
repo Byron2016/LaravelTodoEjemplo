@@ -1,4 +1,10 @@
 - Creación de controlador/modelo/seeder/factory/migration
-  - php artisan make:model Todo -a
+	- php artisan make:model Todo -a
 - Una vez actualizado archivo de migración ejecutar la migración.
-  - php artisan migrate
+	- php artisan migrate
+- Crear Alerta
+	- php artisan make:component Alert
+		- Crea archivo 
+			- App\View\Components\Alert.php
+			- resources\View\components\alert.blade.php
+		

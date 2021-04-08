@@ -35,7 +35,9 @@ class TodoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //dd($request->all());
+        Todo::create($request->all());
+        return redirect()->back()->with('message','Todo creado exitosamente');
     }
 
     /**
