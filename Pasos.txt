@@ -16,3 +16,12 @@
 			- app/Http/Requests/StorePostRequest
 			- 
 			
+- VALIDACIONES
+	- Crear Rutas
+	- Crear Modelo - Migración - Controlador
+		- php artisan make:model Posteo -mc
+	- Adecuar migración agregando los campos que sean necesarios
+	- Ejecutar migración
+		- php artisan migrate:fresh
+	- Crear la vista view/posteos
+	- 

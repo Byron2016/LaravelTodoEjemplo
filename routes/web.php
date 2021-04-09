@@ -72,3 +72,6 @@ Route::get('/todos/edit', 'TodoController@edit');
 //PracticaValidaciones
 Route::get('/post/create', 'PostController@create');
 Route::post('/post/create', 'PostController@store');
+
+Route::get('posteo/create', 'PosteoController@create');
+Route::post('posteo/create', 'PosteoController@store');
