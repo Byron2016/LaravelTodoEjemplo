@@ -7,4 +7,12 @@
 		- Crea archivo 
 			- App\View\Components\Alert.php
 			- resources\View\components\alert.blade.php
+			
+	- Sección de error:
+		- https://www.youtube.com/watch?v=_-lIP0IbArA&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=24
 		
+	- php artisan make:request StorePostRequest
+		- Crea archivos:
+			- app/Http/Requests/StorePostRequest
+			- 
+			

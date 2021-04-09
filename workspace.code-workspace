@@ -1,19 +1,20 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\proyecto_04_CarritoCompras"
-		}
-	],
-	"settings": {
-		"editor.fontSize": 10,
-		"editor.tabSize": 2,
-		"workbench.colorTheme": "Kimbie Dark",
-		"editor.formatOnPaste": true,
-		"editor.formatOnSave": true,
-		"php.validate.executablePath": "c:/xampp/php/php.exe",
-		"php.executablePath": "c:/xampp/php/php.exe"
-	}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\proyecto_04_CarritoCompras"
+    }
+  ],
+  "settings": {
+    "editor.fontSize": 24,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "workbench.colorTheme": "Kimbie Dark",
+    "editor.formatOnSave": true,
+    "php.validate.executablePath": "c:/xampp/php/php.exe",
+    "php.executablePath": "c:/xampp/php/php.exe"
+  }
 }
