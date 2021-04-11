@@ -4,6 +4,8 @@
 	- php artisan migrate
 - Crear Alerta
 	- php artisan make:component Alert
+		- https://www.youtube.com/watch?v=DkiATGbG9cY&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=19
+		- https://www.youtube.com/watch?v=b9ozSBKjQTk&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=21
 		- Crea archivo 
 			- App\View\Components\Alert.php
 			- resources\View\components\alert.blade.php
@@ -15,6 +17,9 @@
 		- Crea archivos:
 			- app/Http/Requests/StorePostRequest
 			- 
+			
+- Form Validation
+	- https://www.youtube.com/watch?v=7NmngGhHwZo&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=25
 			
 - VALIDACIONES
 	- Crear Rutas

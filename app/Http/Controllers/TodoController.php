@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Todo;
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
+use App\Http\Requests\ToDoCreateRequest;
 use Illuminate\Support\Facades\Validator;
 
 class TodoController extends Controller
@@ -32,9 +33,10 @@ class TodoController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
-    public function store(Request $request)
+    //public function store(Request $request)
+    public function store(ToDoCreateRequest $request)
     {
         //dd($request->all());
         // if(!$request->title){
@@ -44,20 +46,20 @@ class TodoController extends Controller
         //   'title' => 'required|max:255',
         // ]);
 
-        $rules = [
-          'title' => 'required|max:255',
-        ];
+        // $rules = [
+        //   'title' => 'required|max:255',
+        // ];
 
-        $messages = [
-          'title.max' => 'Título del ToDo no puede ser mayor a 255 caracteres (contando espacios)',
-        ];
+        // $messages = [
+        //   'title.max' => 'Título del ToDo no puede ser mayor a 255 caracteres (contando espacios)',
+        // ];
 
-        $validator = Validator::make($request->all(), $rules, $messages);
-        if($validator->fails()){
-          return redirect()->back()
-                      ->withErrors($validator)
-                      ->withInput();
-        }
+        // $validator = Validator::make($request->all(), $rules, $messages);
+        // if($validator->fails()){
+        //   return redirect()->back()
+        //               ->withErrors($validator)
+        //               ->withInput();
+        // }
         // Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error eaque atque, odio esse amet itaque dolor totam animi exercitationem corporis soluta necessitatibus asperiores illum molestiae praesentium voluptatum vitae ea qui.
         Todo::create($request->all());
         return redirect()->back()->with('message','Todo creado exitosamente');
