@@ -24,4 +24,16 @@
 	- Ejecutar migración
 		- php artisan migrate:fresh
 	- Crear la vista view/posteos
-	- 
+	- Validación de solicitud de formulario
+		- Buena referencia
+			- https://medium.com/@kamerk22/the-smart-way-to-handle-request-validation-in-laravel-5e8886279271
+		- Error
+			- 403 - This action is unauthorized.
+				- En el método Autorize del REQUEST se debe retornar un true.
+					- https://codesource.io/ask/d/291-this-action-is-unauthorized-laravel-validation
+			- 
+		- Crear solicitudes de formulario
+			- php artisan make:request StorePosteoRequest
+				- Crea: 
+					- App\Http\Requests\StorePosteoRequest.php
+			

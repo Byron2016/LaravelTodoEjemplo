@@ -59,6 +59,9 @@ Route::view('/convue','vue_desplegar');
 // Route::get('/todos/create', function () {
 //     return view('todos.create');
 // });
+
+
+// https://www.youtube.com/watch?v=0cJA208Roy8&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=22
 Route::get('/todos','TodoController@index');
 
 Route::get('/todos/create', 'TodoController@create');
@@ -75,3 +78,6 @@ Route::post('/post/create', 'PostController@store');
 
 Route::get('posteo/create', 'PosteoController@create');
 Route::post('posteo/create', 'PosteoController@store');
+//PracticaValidaciones - ConFormulariosDeValidación
+Route::get('posteo/createFormValid', 'PosteoController@createFormValid');
+Route::post('posteo/createFormValid', 'PosteoController@storeFormValid');

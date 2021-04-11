@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Posteo;
+use App\Http\Requests\StorePosteoRequest;
 use Illuminate\Http\Request;
 
 class PosteoController extends Controller
@@ -53,6 +54,25 @@ class PosteoController extends Controller
         echo "i es igual a 1";
         break;
     }
+    Posteo::Create($request->all());
+    return redirect()->back()->with('message','Posteo creado exitosamente');
+
+  }
+
+  public function createFormValid()
+  {
+    return view('posteo.createFormValid');
+  }
+
+  public function storeFormValid(StorePosteoRequest $request)
+  {
+    //dd($request->all());
+    
+    // The incoming request is valid...
+
+    // Retrieve the validated input data...
+    $validated = $request->validated();
+    //dd($validated);
     Posteo::Create($request->all());
     return redirect()->back()->with('message','Posteo creado exitosamente');
 
