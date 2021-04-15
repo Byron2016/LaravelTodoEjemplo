@@ -41,7 +41,7 @@ export default {
     return {
       categories: [],
       products: [],
-      //loading: true,
+      loading: true,
     };
   },
 
@@ -74,7 +74,7 @@ export default {
         .get("/api/nproducts")
         .then((response) => {
           this.products = response.data.data;
-          //this.loading = false;
+          this.loading = false;
         })
         .catch(function (error) {
           console.log(error);

@@ -13,9 +13,30 @@
     "coenraads.bracket-pair-colorizer",
     "ysemeniuk.emmet-live",
     "knisterpeter.vscode-github",
-    "xabikos.javascriptsnippets", 
+    "xabikos.javascriptsnippets",
     "emmanuelbeziat.vscode-great-icons",
-
-
+    //https://www.youtube.com/watch?v=sAppoByZap4
+    "formulahendry.auto-close-tag",
+    "mgmcdermott.vscode-language-babel",
+    "johnpapa.vscode-cloak",
+    "mikestead.dotenv",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
+    "vincaslt.highlight-matching-tag",
+    "wix.vscode-import-cost",
+    "oderwat.indent-rainbow",
+    "pkief.material-icon-theme",
+    "spywhere.now-playing",
+    "eg2.vscode-npm-script",
+    "trabpukcip.vscode-npm-scripts",
+    "whizkydee.material-palenight-theme",
+    "shan.code-settings-sync",
+    "shardulm94.trailing-spaces",
+    "wakatime.vscode-wakatime",
+    //Vue & las mejores extensiones para Visual Studio Code. Vue Español.
+    //https://www.youtube.com/watch?v=VHqdbXAOiGg
+    "octref.vetur",
+    "dariofuzinato.vue-peek",
+    "sdras.vue-vscode-snippets",
   ]
 }

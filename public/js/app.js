@@ -1949,8 +1949,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       categories: [],
-      products: [] //loading: true,
-
+      products: [],
+      loading: true
     };
   },
   mounted: function mounted() {
@@ -1979,7 +1979,8 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       axios.get("/api/nproducts").then(function (response) {
-        _this2.products = response.data.data; //this.loading = false;
+        _this2.products = response.data.data;
+        _this2.loading = false;
       })["catch"](function (error) {
         console.log(error);
       });

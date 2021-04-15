@@ -7,7 +7,7 @@
     <title>Shop Catalog</title>
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/shop-homepage.css') }}" rel="stylesheet">
-    {{-- <link href="{{ asset('css/loading.css') }}" rel="stylesheet"> --}}
+    <link href="{{ asset('css/loading.css') }}" rel="stylesheet">
 </head>
 <body>
   {{-- <h1>Holaaaa desde desplegar.blade.php</h1> --}}
