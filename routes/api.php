@@ -24,3 +24,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('categories', 'Api\CategoryController@index');
 Route::get('products', 'Api\ProductController@index');
+
+// From Laravel Blade to Vue.js + API [Live-coding Example]
+//  https://www.youtube.com/watch?v=4uVNz9sQn18
+//  https://startbootstrap.com/template/shop-homepage
+Route::get('ncategories', 'Api\NcategoryController@index');
+Route::get('nproducts', 'Api\NproductController@index');
