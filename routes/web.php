@@ -54,6 +54,9 @@ Route::view('/convue','vue_desplegar');
 //  https://www.youtube.com/watch?v=4uVNz9sQn18
 //  https://startbootstrap.com/template/shop-homepage
 Route::get('/convue','SinVueController@index');
+Route::get('/convue/con', function () {
+  return view('vue/ConVue');
+});
 
 // PARA TODOS
 // Route::get('/todos', function () {

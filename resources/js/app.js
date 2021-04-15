@@ -9,11 +9,19 @@ require('./bootstrap');
 //   el: '#app',
 // });
 
+// window.Vue = require('vue');
+
+// Vue.component('front-page', require('./components/Front.vue').default);
+
+// const app = new Vue({
+//     el: '#app',
+// });
+
 window.Vue = require('vue');
 
 Vue.component('front-page', require('./components/Front.vue').default);
 
 const app = new Vue({
-    el: '#app',
+  el: '#app',
 });
 
