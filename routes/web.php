@@ -50,6 +50,10 @@ Route::post('ajax-request','AjaxController@obtieneDataCarrito');
 
 Route::get('/desplegar','DesplegarController@index');
 Route::view('/convue','vue_desplegar');
+// From Laravel Blade to Vue.js + API [Live-coding Example]
+//  https://www.youtube.com/watch?v=4uVNz9sQn18
+//  https://startbootstrap.com/template/shop-homepage
+Route::get('/convue','SinVueController@index');
 
 // PARA TODOS
 // Route::get('/todos', function () {
