@@ -15,9 +15,13 @@
         class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" />
         <p class="text-green-500 text-xs italic">Título del ToDo.</p>
       </div>
-      <div class="flex items-center">
+      <div class="flex items-center justify-between">
         <input type="submit" value="Create" 
         class="font-bold py-2 px-4 rounded bg-blue-500 hover:bg-blue-700  border-blue-500 hover:border-blue-700 text-white focus:outline-none focus:shadow-outline" />
+        <a href="/todos/" 
+        class="font-bold py-2 px-4 rounded bg-blue-500 hover:bg-blue-700  border-blue-500 hover:border-blue-700 text-white focus:outline-none focus:shadow-outline">
+          Listar
+        </a>
       </div>
     </form>
   </div>
