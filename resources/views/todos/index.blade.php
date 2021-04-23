@@ -11,6 +11,7 @@
     </div>
     <div class="">
       <ul class="my-5">
+        <x-ToDoAlert />
         @foreach ($todos as $todo )
           <li class="flex justify-start py-2">
             

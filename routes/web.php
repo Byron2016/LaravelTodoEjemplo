@@ -69,7 +69,7 @@ Route::get('/convue/con', function () {
 
 
 // https://www.youtube.com/watch?v=0cJA208Roy8&list=PLe30vg_FG4OSCTUv3XIkwH--cK2D7rfJJ&index=22
-Route::get('/todos','TodoController@index');
+Route::get('/todos','TodoController@index')->name('todo.index');
 
 Route::get('/todos/create', 'TodoController@create');
 
@@ -78,6 +78,12 @@ Route::post('/todos/create', 'TodoController@store');
 //Route::get('/todos/{id}/edit', 'TodoController@edit');
 Route::get('/todos/{todo}/edit', 'TodoController@edit'); //28 Route Model Binding
 
+Route::patch('/todos/{todo}/update', 'TodoController@update')->name('todo.update');
+
+//verificar si llamada entra a la ruta
+// Route::patch('/todos/{todo}/update', function() {
+//   dd('Si entro a la ruta');
+// })->name('todo.update');
 
 //PracticaValidaciones
 Route::get('/post/create', 'PostController@create');

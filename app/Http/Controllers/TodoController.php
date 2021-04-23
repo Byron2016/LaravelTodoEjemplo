@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Todo;
-//use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use App\Http\Requests\ToDoCreateRequest;
 use Illuminate\Support\Facades\Validator;
 
@@ -91,6 +91,7 @@ class TodoController extends Controller
         return view('todos.edit', compact('todo'));
     }
 
+
     /**
      * Update the specified resource in storage.
      *
@@ -100,7 +101,13 @@ class TodoController extends Controller
      */
     public function update(Request $request, Todo $todo)
     {
-        //
+      //dd("entro metdo update de controlador todo");
+      //dd($request->all());
+      //update todo
+      $todo->update(['title' => $request->title]);
+      //return redirect()->back()->with('message', 'Actuaizado!');
+      return redirect(route('todo.index'))->with('message', 'Actuaizado!');
+
     }
 
     /**
