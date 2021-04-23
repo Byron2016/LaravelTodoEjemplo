@@ -99,7 +99,8 @@ class TodoController extends Controller
      * @param  \App\Todo  $todo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Todo $todo)
+    //public function update(Request $request, Todo $todo)
+    public function update(ToDoCreateRequest $request, Todo $todo) //Para validar lo que se mete.
     {
       //dd("entro metdo update de controlador todo");
       //dd($request->all());
